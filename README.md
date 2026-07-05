@@ -28,6 +28,12 @@ This repository contains a modern web implementation:
 - **Backend:** Python 3.11, Django 5.2, Django REST Framework, SQLite
 - **Frontend:** React 18, Vite, modern CSS with responsive design
 
+## Frontend-Only Demo
+
+The frontend now runs as a self-contained static demo with local sample data and no backend dependency. That makes it suitable for GitHub Pages, Netlify, or Vercel when you only want to show the product concept.
+
+If you want the live Django backend later, you can restore API wiring separately.
+
 **Target OS:** Linux / Ubuntu / macOS / Windows
 
 ---
@@ -38,6 +44,22 @@ This repository contains a modern web implementation:
 You need to have installed on your machine:
 - **Python 3.11 or higher** (with pip)
 - **Node.js 16 or higher** (with npm)
+
+### Option A: Frontend-only demo
+
+This is the fastest way to share the idea publicly.
+
+```bash
+cd frontend
+npm install
+npm run build
+```
+
+Upload the generated `frontend/dist` folder to a static host such as GitHub Pages.
+
+### Option B: Full local stack
+
+Use this only if you want to run the backend again.
 
 ### Step 1: Setup Backend (Terminal 1)
 
